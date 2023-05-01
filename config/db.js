@@ -6,6 +6,9 @@ const conn = async () => {
     try {
         const dbConn = await mongoose.connect(
             `mongodb+srv://${dbUser}:${dbPassword}@cluster0.wplahb4.mongodb.net/?retryWrites=true&w=majority`
+            
+
+
         )
         console.log("Conectou ao Banco")
         return dbConn
